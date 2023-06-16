@@ -40,6 +40,12 @@
   &:last-child::after {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: #312e39;
+  }
 }
 .screen__link {
   color: #4d4959;
