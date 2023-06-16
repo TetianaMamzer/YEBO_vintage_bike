@@ -1,0 +1,41 @@
+.sliders {
+  padding: 120px 15px 60px 15px;
+}
+.container {
+}
+.sliders__body {
+}
+.sliders__item {
+}
+.sliders__img {
+  margin: 0 auto 20px;
+  max-width: 32px;
+}
+.sliders__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  line-height: normal;
+  color: #222429;
+
+  & span {
+    color: #848789;
+    font-weight: 300;
+    letter-spacing: 1.8px;
+    line-height: normal;
+  }
+}
+.sliders__text {
+  text-align: center;
+  color: #848789;
+  font-weight: 300;
+  font-size: 24px;
+  font-style: normal;
+  letter-spacing: 1.8px;
+  line-height: normal;
+  font-style: italic;
+  max-width: 1036px;
+  margin-bottom: 104px;
+}

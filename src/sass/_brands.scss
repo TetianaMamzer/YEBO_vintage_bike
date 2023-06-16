@@ -1,0 +1,109 @@
+.brends {
+}
+.brands__raw {
+  display: flex;
+
+  @media (max-width: 1010px) {
+    flex-direction: column;
+
+    &:last-child {
+      flex-direction: column-reverse;
+    }
+  }
+}
+.brands__img {
+  min-width: 100%;
+  max-width: 100%;
+}
+.brands__colum {
+  flex: 0 1 33.333%;
+  background-color: #222429;
+}
+.brands__colum-b1 {
+  position: relative;
+  background: url('../images/bike/Layer_10.png') #222429 no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: 0 1 66.666%;
+}
+.brands__colum-b2 {
+  position: relative;
+  background: url('../images/bike/Layer_12.png') #222429 no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: 0 1 66.666%;
+}
+.brands__colum-b3 {
+  position: relative;
+  background: url('../images/bike/Layer_15.png') #222429 no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: 0 1 33.333%;
+}
+.brands__colum-b4 {
+  position: relative;
+  background: url('../images/bike/Layer_14.png') #222429 no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: 0 1 33.333%;
+}
+
+.brands__items {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #3662466f;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+
+  & img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @media (max-height: 1010px) {
+    padding: 30%;
+  }
+}
+.brands__box {
+  text-align: center;
+  padding: 70px 67px 105px;
+  background-color: #ffffff;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: -8px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 11px solid #fff;
+  }
+}
+.text-content-j {
+  text-align: start;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    display: inline-flex;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-30%);
+    text-align: center;
+    background-color: #353738;
+  }
+}
