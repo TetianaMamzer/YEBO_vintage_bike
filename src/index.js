@@ -15,7 +15,7 @@ ref.link.forEach(link => {
   })
 })
 
-ref.span.addEventListener('click', () => {
+ref.open.addEventListener('click', () => {
   ref.menu.classList.toggle('active');
   ref.open.classList.toggle('active')
     ref.body.classList.toggle('scroll')
