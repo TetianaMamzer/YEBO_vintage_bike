@@ -1,12 +1,6 @@
 .sliders {
   padding: 120px 15px 60px 15px;
 }
-.container {
-}
-.sliders__body {
-}
-.sliders__item {
-}
 .sliders__img {
   margin: 0 auto 20px;
   max-width: 32px;
@@ -38,4 +32,59 @@
   font-style: italic;
   max-width: 1036px;
   margin-bottom: 104px;
+}
+// ----------------------------------
+
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sliders__body {
+  position: relative;
+  padding: 0px 60px;
+  & .slick-arrow {
+    position: absolute;
+    top: 35%;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 60px;
+  }
+
+  & .slick-arrow.slick-prev {
+    background: url(../images/pngwing1.com.png) 0 0 / 100% no-repeat;
+    left: 0;
+  }
+
+  & .slick-arrow.slick-next {
+    background: url(../images/pngwing.com.png) 0 0 / 100% no-repeat;
+    right: 0;
+  }
+
+  & .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .slick-dots li {
+    list-style: none;
+
+    &.slick-active button {
+      background-color: #a9afb3;;
+    }
+  }
+  & .slick-dots button {
+    font-size: 0;
+    width: 11px;
+    height: 11px;  
+    border: 1px solid #c8c8c8;    
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 9px;
+  }
 }

@@ -1,0 +1,175 @@
+.shop {
+}
+.shop__body {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  cursor: pointer;
+  
+}
+.shop__column {
+
+}
+
+.shop__items {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3662466f;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  z-index: 2;
+
+}
+.shop__column-a {
+  height: 100%;
+  flex: 0 1 33.333%;
+
+}
+.shop__block {
+  display: flex;
+}
+.shop__container {
+  
+  display: flex;
+  flex: 0 1 50%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50%;
+  height: auto;
+  
+  &.a {
+    background: url('../images/bike/Layer_19.png')  #222429 no-repeat;
+        background-position: center;
+    background-size: cover;
+  }
+  &.b {
+    background: url('../images/bike/Layer_21.png')  #222429 no-repeat;
+        background-position: center;
+    background-size: cover;
+  }
+
+  &.c {
+    background: url('../images/bike/Layer_24.png') #222429  no-repeat;
+        background-position: center;
+    background-size: cover;
+  }
+
+  &.d {
+    background: url('../images/bike/Layer_26.png') #222429  no-repeat;
+        background-position: center;
+    background-size: cover;
+  }
+
+  & .text__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 40%;
+    min-height: 40%;
+    transform: translate(-50%, -50%);
+  }
+  &:hover .shop__items {
+    opacity: 1;
+  }
+}
+
+.shop__container-bottom {
+  flex: 0 1 100%;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50%;
+  height: auto;
+  position: relative;
+  
+  &.a {
+    background: url('../images/bike/Layer_20.png') #222429  no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+    
+  &.b {
+    background: url('../images/bike/Layer_23.png') #222429  no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  & .text__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 40%;
+    min-height: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover .shop__items {
+    opacity: 1;
+  }
+}
+.shop__column-b {
+  flex: 0 1 16.666%;
+
+}
+.shop__container-one {
+  background-size: cover;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 0px 0px 200.5% 0px;
+  background-position: center;
+  position: relative;
+
+  &.a {
+    background: url('../images/bike/Layer_22.png') #222429  no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &.b {
+    background: url('../images/bike/Layer_25.png') #222429  no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  & .text__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 40%;
+    min-height: 40%;
+    transform: translate(-50%, -50%);
+   
+  }
+  &:hover .shop__items {
+    opacity: 1;
+  }
+}
+
+
+.shop__footer {
+  background-color: #282f35;
+  padding: 75px 0px;
+  display: block;
+  text-align: center;
+}
+.container {
+}
+.shop__button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+background-color: transparent;
+padding: 20px 56px;
+font-size: 14px;
+font-weight: 700;
+color: #fff;
+letter-spacing: 2.8px;
+text-transform: uppercase;
+text-align: center;
+transition: all 0.3s ease 0s;
+
+&:hover,
+&:focus {
+  background-color: #fff;
+  color: #222429;
+}
+}

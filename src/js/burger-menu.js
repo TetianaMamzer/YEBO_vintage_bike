@@ -5,7 +5,6 @@ const ref = {
   body: document.querySelector('body'),
   link: document.querySelectorAll('.burger__link')
 };
-console.log(ref)
 
 ref.link.forEach(link => {
   link.addEventListener('click', () => {
@@ -20,6 +19,3 @@ ref.open.addEventListener('click', () => {
   ref.open.classList.toggle('active')
     ref.body.classList.toggle('scroll')
   });
-
-
-
